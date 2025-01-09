@@ -19,53 +19,62 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="py-1 px-4 bg-gradient-to-r from-[#b43ab1] via-[#fd1d1d] to-[#fcc645] shadow-lg transition-all ease-in-out duration-300">
+    <nav className="py-1 px-4 bg-gradient-to-t from-[#ff914d] to-[#8c52ff] shadow-lg transition-all ease-in-out duration-300">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-lg font-semibold">
           <Image
             src={Logo}
             width={250}
-            height={80}
+            height={40}
             alt="Logo"
-            className=" w-52 object-cover"
+            className=" w-48 object-cover"
           />
         </div>
 
         <div className="lg:flex hidden space-x-8 items-center">
-          <Link href="/" className="text-white font-bold text-xl">
-            Home
+          <Link href="/" className="text-white font-semibold text-xl">
+            होम
           </Link>
-          <Link href="/about" className="text-white font-bold text-xl">
-            About
+          <Link href="/about" className="text-white font-semibold text-xl">
+            अबाऊट
           </Link>
           <div className="relative">
             <button
-              className="text-white font-bold text-xl flex items-center "
+              className="text-white font-semibold text-xl flex items-center "
               onClick={toggleDropdown}
             >
-              Dropdown
+              मंडप डेकोरेशन
               <HiChevronDown
-                className={` text-2xl mt-1 font-bold transform ${
+                className={` text-2xl mt-1 font-semibold transform ${
                   dropdownOpen ? "rotate-180" : ""
                 } transition-transform`}
               />
             </button>
             {dropdownOpen && (
-              <div className="absolute z-10 text-white min-w-44 left-[-30px]  mt-2 bg-gradient-to-r from-[#b43ab1] via-[#fd1d1d] to-[#fcc645]  rounded-md transition-all ease-in-out duration-200 opacity-100">
+              <div className="absolute z-10 text-white min-w-44 left-[-30px]  mt-2 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  rounded-md transition-all ease-in-out duration-200 opacity-100">
                 <Link href="/option1" className="block px-4 py-2 text-nowrap">
-                  Option 1
+                  ओपन एअर मंडप
                 </Link>
-                <Link href="/option2" className="block px-4 py-2 ">
-                  Option 2
+                <Link href="/option2" className="block px-4 py-2 text-nowrap">
+                  ट्रॅडिशनल मंडप
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 ">
-                  Option 3
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  लाईटिंग मंडप डेकोरेशन
+                </Link>
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  थीम बेस्ड मंडप डेकोरेशन
+                </Link>
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  फ्लोरल मंडप डेकोरेशन
                 </Link>
               </div>
             )}
           </div>
-          <Link href="/services" className="text-white font-bold text-xl">
-            Services
+          <Link href="/services" className="text-white font-semibold text-xl">
+            साऊंड सिस्टीम
+          </Link>
+          <Link href="/services" className="text-white font-semibold text-xl">
+            कॉन्टॅक्ट
           </Link>
         </div>
         <button onClick={toggleMenu} className="lg:hidden text-white">
@@ -92,23 +101,20 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden text-white space-y-4 p-4 mb-6 transition-all ease-in-out duration-300">
           <Link href="/" className="block py-1 ">
-            Home
+            होम
           </Link>
           <hr />
           <Link href="/about" className="block py-1 ">
-            About
+            अबाऊट
           </Link>
           <hr />
-          <Link href="/services" className="block py-1 ">
-            Services
-          </Link>
-          <hr />
+
           <div className="relative">
             <button
               className="w-full text-white py-2  flex items-center justify-between"
               onClick={toggleDropdown}
             >
-              Dropdown
+              मंडप डेकोरेशन
               <HiChevronDown
                 className={`ml-1 text-2xl transform ${
                   dropdownOpen ? "rotate-180" : ""
@@ -117,18 +123,28 @@ export default function Navbar() {
             </button>
             {dropdownOpen && (
               <div className=" left-0 w-full text-white rounded-md mt-2 transition-all ease-in-out duration-200 opacity-100">
-                <Link href="/option1" className="block px-4 py-2 ">
-                  Option 1
+                <Link href="/option1" className="block px-4 py-2 text-nowrap">
+                  ओपन एअर मंडप
                 </Link>
-                <Link href="/option2" className="block px-4 py-2">
-                  Option 2
+                <Link href="/option2" className="block px-4 py-2 text-nowrap">
+                  ट्रॅडिशनल मंडप
                 </Link>
-                <Link href="/option3" className="block px-4 py-2">
-                  Option 3
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  लाईटिंग मंडप डेकोरेशन
+                </Link>
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  थीम बेस्ड मंडप डेकोरेशन
+                </Link>
+                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                  फ्लोरल मंडप डेकोरेशन
                 </Link>
               </div>
             )}
           </div>
+          <hr />
+          <Link href="/services" className="block py-1 ">
+            साऊंड सिस्टीम
+          </Link>
           <hr />
         </div>
       )}
