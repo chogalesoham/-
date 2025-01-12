@@ -5,6 +5,7 @@ import { FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -60,6 +61,15 @@ const Footer = () => {
             CopyRight ©️ Chogale Soham
           </p>
         </div>
+
+        <a
+          href="https://api.whatsapp.com/send?phone=5562999999999&text="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-3 right-3 w-14 h-14 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-500 hover:bg-green-600 animate-bounce"
+        >
+          <BsWhatsapp className=" text-3xl font-bold" />
+        </a>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <ImageSlider />
       <AboutUs />
+
       <ServiceSection />
       <ContactUs />
     </>

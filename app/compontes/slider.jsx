@@ -62,7 +62,7 @@ const ImageSlider = () => {
                   </h1>
                   <a
                     href="your-booking-link"
-                    class="inline-block px-4 py-1 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  font-semibold text-sm  transition duration-300"
+                    className="inline-block px-4 py-1 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  font-semibold text-sm  transition duration-300"
                   >
                     Book Now
                   </a>
