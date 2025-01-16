@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { HiChevronDown } from "react-icons/hi";
 import Image from "next/image";
@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="py-1 px-4 bg-gradient-to-t from-[#ff914d] to-[#8c52ff] shadow-lg transition-all ease-in-out duration-300">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-white text-lg font-semibold">
+        <Link href={"/"} className="text-white text-lg font-semibold">
           <Image
             src={Logo}
             width={250}
@@ -29,7 +29,7 @@ export default function Navbar() {
             alt="Logo"
             className=" w-48 object-cover"
           />
-        </div>
+        </Link>
 
         <div className="lg:flex hidden space-x-8 items-center">
           <Link href="/" className="text-white font-semibold text-xl">
@@ -38,33 +38,49 @@ export default function Navbar() {
           <Link href="/about" className="text-white font-semibold text-xl">
             अबाऊट
           </Link>
-          <div className="relative">
-            <button
+          <div onClick={() => setMenuOpen(false)} className="relative">
+            <Link
+              href={"/mandap-decorations"}
               className="text-white font-semibold text-xl flex items-center "
-              onClick={toggleDropdown}
             >
               मंडप डेकोरेशन
               <HiChevronDown
+                onClick={toggleDropdown}
                 className={` text-2xl mt-1 font-semibold transform ${
                   dropdownOpen ? "rotate-180" : ""
                 } transition-transform`}
               />
-            </button>
+            </Link>
             {dropdownOpen && (
               <div className="absolute z-10 text-white min-w-44 left-[-30px]  mt-2 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  rounded-md transition-all ease-in-out duration-200 opacity-100">
-                <Link href="/option1" className="block px-4 py-2 text-nowrap">
+                <Link
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   ओपन एअर मंडप
                 </Link>
-                <Link href="/option2" className="block px-4 py-2 text-nowrap">
+                <Link
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   ट्रॅडिशनल मंडप
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   लाईटिंग मंडप डेकोरेशन
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   थीम बेस्ड मंडप डेकोरेशन
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   फ्लोरल मंडप डेकोरेशन
                 </Link>
               </div>
@@ -103,53 +119,93 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden text-white space-y-4 p-4 mb-6 transition-all ease-in-out duration-300">
-          <Link href="/" className="block py-1 ">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            href="/"
+            className="block py-1 "
+          >
             होम
           </Link>
           <hr />
-          <Link href="/about" className="block py-1 ">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            href="/about"
+            className="block py-1 "
+          >
             अबाऊट
           </Link>
           <hr />
 
           <div className="relative">
-            <button
-              className="w-full text-white py-2  flex items-center justify-between"
-              onClick={toggleDropdown}
-            >
-              मंडप डेकोरेशन
+            <div className=" flex w-full">
+              <Link
+                onClick={() => setMenuOpen(false)}
+                href={"/mandap-decorations"}
+                className="w-full text-white py-2  flex items-center justify-between"
+              >
+                मंडप डेकोरेशन
+              </Link>
               <HiChevronDown
-                className={`ml-1 text-2xl transform ${
+                onClick={toggleDropdown}
+                className={`ml-1 p-[2px] text-2xl rounded-lg bg-white text-black transform ${
                   dropdownOpen ? "rotate-180" : ""
                 } transition-transform`}
               />
-            </button>
+            </div>
             {dropdownOpen && (
               <div className=" left-0 w-full text-white rounded-md mt-2 transition-all ease-in-out duration-200 opacity-100">
-                <Link href="/option1" className="block px-4 py-2 text-nowrap">
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   ओपन एअर मंडप
                 </Link>
-                <Link href="/option2" className="block px-4 py-2 text-nowrap">
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   ट्रॅडिशनल मंडप
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   लाईटिंग मंडप डेकोरेशन
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   थीम बेस्ड मंडप डेकोरेशन
                 </Link>
-                <Link href="/option3" className="block px-4 py-2 text-nowrap">
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  href="/mandap-decorations"
+                  className="block px-4 py-2 text-nowrap"
+                >
                   फ्लोरल मंडप डेकोरेशन
                 </Link>
               </div>
             )}
           </div>
           <hr />
-          <Link href="/sound-system" className="block py-1 ">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            href="/sound-system"
+            className="block py-1 "
+          >
             साऊंड सिस्टीम
           </Link>
           <hr />
-          <Link href="/contact" className="block py-1 ">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            href="/contact"
+            className="block py-1 "
+          >
             कॉन्टॅक्ट
           </Link>
         </div>

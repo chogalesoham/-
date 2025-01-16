@@ -7,7 +7,6 @@ const page = () => {
   return (
     <div>
       <Banner params={{ url: "/Contact Us" }} />
-
       <ContactInfo />
       <ContactUs />
     </div>

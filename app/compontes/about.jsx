@@ -30,7 +30,7 @@ const AboutUs = () => {
             data-aos="zoom-in"
           >
             <img
-              src="https://i.pinimg.com/originals/3b/8e/b9/3b8eb9f2e21505c3efa7614f0294f246.jpg"
+              src="https://i.pinimg.com/originals/4a/ad/f0/4aadf0fab12d3f9b25dc12b400e99d32.jpg"
               className=" h-52 w-full object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-orange-600 mb-4">
@@ -66,7 +66,7 @@ const AboutUs = () => {
             data-aos="zoom-in"
           >
             <img
-              src="https://i.ytimg.com/vi/u77JAyHczt0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGFsgKSh_MA8=&amp;rs=AOn4CLBQ2CywY99jCY5s84etdn1zb9m85A"
+              src="https://i.pinimg.com/originals/84/a9/63/84a963c1a1440beaef311df64ad8b0e4.jpg"
               className=" h-52 w-full object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-orange-600 mb-4">
