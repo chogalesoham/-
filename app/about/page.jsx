@@ -5,7 +5,7 @@ import Banner from "../compontes/banner";
 const page = () => {
   return (
     <div>
-      <Banner />
+      <Banner params={{ url: "/About Us" }} />
       <AboutUs />
     </div>
   );

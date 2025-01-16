@@ -21,24 +21,21 @@ const ImageSlider = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Autoplay effect to move to the next slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // 3 seconds autoplay interval
+    }, 4000);
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [images.length]);
 
-  // Function to handle dot click
   const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
 
   return (
-    <div className="relative w-screen container mx-auto">
+    <div className="relative w-screen">
       <div className="overflow-hidden">
-        {/* Image container */}
         <div
           className="flex transition-transform duration-500"
           style={{

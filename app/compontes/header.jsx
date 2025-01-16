@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { HiChevronDown } from "react-icons/hi";
 import Image from "next/image";
@@ -70,10 +70,13 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="/services" className="text-white font-semibold text-xl">
+          <Link
+            href="/sound-system"
+            className="text-white font-semibold text-xl"
+          >
             साऊंड सिस्टीम
           </Link>
-          <Link href="/services" className="text-white font-semibold text-xl">
+          <Link href="/contact" className="text-white font-semibold text-xl">
             कॉन्टॅक्ट
           </Link>
         </div>
@@ -142,10 +145,13 @@ export default function Navbar() {
             )}
           </div>
           <hr />
-          <Link href="/services" className="block py-1 ">
+          <Link href="/sound-system" className="block py-1 ">
             साऊंड सिस्टीम
           </Link>
           <hr />
+          <Link href="/contact" className="block py-1 ">
+            कॉन्टॅक्ट
+          </Link>
         </div>
       )}
     </nav>

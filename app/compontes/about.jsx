@@ -1,4 +1,3 @@
-// components/AboutUs.jsx
 import React from "react";
 
 const AboutUs = () => {
@@ -13,7 +12,7 @@ const AboutUs = () => {
             माऊली मंडप डेकोरेटर्स - आमच्याविषयी
           </h2>
 
-          <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-700 leading-relaxed text-justify md:text-center">
             <strong>माऊली मंडप डेकोरेटर्स ॲण्ड साऊंड सिस्टम</strong> अ‍ॅप
             तुम्हाला तुमच्या खास प्रसंगांसाठी परिपूर्ण डेकोरेशन आणि साऊंड
             सिस्टीम सेवा बुक करण्याची सुविधा देते. आमच्या अ‍ॅपद्वारे तुम्ही
