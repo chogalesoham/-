@@ -57,8 +57,11 @@ const ImageSlider = () => {
                   <h1 className="text-2xl md:text-6xl font-extrabold text-white leading-tight tracking-tight px-4 text-shadow mb-2">
                     {item?.heding}
                   </h1>
+
                   <a
-                    href="your-booking-link"
+                    href="https://api.whatsapp.com/send?phone=9022513064&text="
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block px-4 py-1 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  font-semibold text-sm  transition duration-300"
                   >
                     Book Now
