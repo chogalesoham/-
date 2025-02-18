@@ -21,7 +21,7 @@ const ContactUs = () => {
                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
                   <div className="bg-white rounded-lg block  shadow-xl">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60870.34728189115!2d73.48182265987262!3d17.536289488381744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2062c95f6f0ff%3A0x55c667ba59237eed!2sChiplun%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1736605603600!5m2!1sen!2sin"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476.36659680836374!2d73.54114875197413!3d17.222050244465027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1fd48e84d2fab%3A0x8d3b66cbb843c12c!2sGanpati%20Mandir%20Dhamani%20Gavalwadi!5e0!3m2!1sen!2sin!4v1739887434714!5m2!1sen!2sin"
                       className=" w-full h-full rounded-lg"
                     ></iframe>
                   </div>
