@@ -45,7 +45,7 @@ const Footer = () => {
               <HiOutlineMailOpen /> swapnilchogale@gmail.com
             </li>
             <li className=" text-white font-semibold flex items-center gap-2">
-              <FaPhone /> +91 902 2513 064
+              <FaPhone /> +91 902 251 3064
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <a
-          href="https://api.whatsapp.com/send?phone=5562999999999&text="
+          href="https://api.whatsapp.com/send?phone=9022513064&text="
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-3 right-3 w-14 h-14 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-500 hover:bg-green-600 animate-bounce"

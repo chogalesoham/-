@@ -19,29 +19,29 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="py-1 px-4 bg-gradient-to-t from-[#ff914d] to-[#8c52ff] shadow-lg transition-all ease-in-out duration-300">
+    <nav className=" bg-[#FEF9F2] bg-gradient-to-t from-[#ff914d] to-[#8c52ff] py-1 px-4 shadow-lg transition-all ease-in-out duration-300">
       <div className="container mx-auto flex items-center justify-between">
-        <Link href={"/"} className="text-white text-lg font-semibold">
+        <Link href={"/"} className="text-black text-lg font-semibold">
           <Image
             src={Logo}
-            width={250}
-            height={40}
+            width={300}
+            height={60}
             alt="Logo"
-            className=" w-48 object-cover"
+            className="w-64 h-auto object-cover"
           />
         </Link>
 
         <div className="lg:flex hidden space-x-8 items-center">
-          <Link href="/" className="text-white font-semibold text-xl">
+          <Link href="/" className="text-black font-semibold text-xl">
             होम
           </Link>
-          <Link href="/about" className="text-white font-semibold text-xl">
+          <Link href="/about" className="text-black font-semibold text-xl">
             अबाऊट
           </Link>
           <div onClick={() => setMenuOpen(false)} className="relative">
             <Link
               href={"/mandap-decorations"}
-              className="text-white font-semibold text-xl flex items-center "
+              className="text-black font-semibold text-xl flex items-center "
             >
               मंडप डेकोरेशन
               <HiChevronDown
@@ -52,7 +52,7 @@ export default function Navbar() {
               />
             </Link>
             {dropdownOpen && (
-              <div className="absolute z-10 text-white min-w-44 left-[-30px]  mt-2 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  rounded-md transition-all ease-in-out duration-200 opacity-100">
+              <div className="absolute z-10 text-black min-w-44 left-[-30px]  mt-2 bg-gradient-to-t from-[#ff914d] to-[#8c52ff]  rounded-md transition-all ease-in-out duration-200 opacity-100">
                 <Link
                   href="/mandap-decorations"
                   className="block px-4 py-2 text-nowrap"
@@ -88,15 +88,15 @@ export default function Navbar() {
           </div>
           <Link
             href="/sound-system"
-            className="text-white font-semibold text-xl"
+            className="text-black font-semibold text-xl"
           >
             साऊंड सिस्टीम
           </Link>
-          <Link href="/contact" className="text-white font-semibold text-xl">
+          <Link href="/contact" className="text-black font-semibold text-xl">
             कॉन्टॅक्ट
           </Link>
         </div>
-        <button onClick={toggleMenu} className="lg:hidden text-white">
+        <button onClick={toggleMenu} className="lg:hidden text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -118,7 +118,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden text-white space-y-4 p-4 mb-6 transition-all ease-in-out duration-300">
+        <div className="lg:hidden text-black space-y-4 p-4 mb-6 transition-all ease-in-out duration-300">
           <Link
             onClick={() => setMenuOpen(false)}
             href="/"
@@ -141,7 +141,7 @@ export default function Navbar() {
               <Link
                 onClick={() => setMenuOpen(false)}
                 href={"/mandap-decorations"}
-                className="w-full text-white py-2  flex items-center justify-between"
+                className="w-full text-black py-2  flex items-center justify-between"
               >
                 मंडप डेकोरेशन
               </Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
               />
             </div>
             {dropdownOpen && (
-              <div className=" left-0 w-full text-white rounded-md mt-2 transition-all ease-in-out duration-200 opacity-100">
+              <div className=" left-0 w-full text-black rounded-md mt-2 transition-all ease-in-out duration-200 opacity-100">
                 <Link
                   onClick={() => setMenuOpen(false)}
                   href="/mandap-decorations"

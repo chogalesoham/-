@@ -12,7 +12,7 @@ const ContactInfo = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Address</h2>
           <p className="text-gray-600">
-            4671 Sugar Camp Road, Owatonna, Minnesota, 55060
+            Dhamni (Gokulnagri ) Maharashtra, India, 415611
           </p>
         </div>
       </div>
@@ -22,8 +22,7 @@ const ContactInfo = () => {
         <FaSquarePhone className="text-5xl text-orange-500" />
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Phone No</h2>
-          <p className="text-gray-600">+91 25325 25352</p>
-          <p className="text-gray-600">+91 25325 25352</p>
+          <p className="text-gray-600">+91 90225 13064</p>
         </div>
       </div>
 
