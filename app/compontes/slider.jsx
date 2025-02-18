@@ -26,7 +26,7 @@ const ImageSlider = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 4000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, [images.length]);
 
   const handleDotClick = (index) => {

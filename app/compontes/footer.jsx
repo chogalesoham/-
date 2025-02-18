@@ -6,6 +6,7 @@ import { GrLocation } from "react-icons/gr";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { BsWhatsapp } from "react-icons/bs";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -42,10 +43,16 @@ const Footer = () => {
               <GrLocation /> Dhamni (Gokulnagri ) Maharashtra
             </li>
             <li className=" text-white font-semibold flex items-center gap-2">
-              <HiOutlineMailOpen /> swapnilchogale@gmail.com
+              <HiOutlineMailOpen /> swapnilchogale741@gmail.com
+            </li>
+            <li className=" text-white font-bold flex items-center gap-2 text-xl">
+              Swapnil Chogale
             </li>
             <li className=" text-white font-semibold flex items-center gap-2">
               <FaPhone /> +91 902 251 3064
+            </li>
+            <li className=" text-white font-semibold flex items-center gap-2">
+              <FaPhone /> +91 9518 391 500
             </li>
           </ul>
         </div>
@@ -54,7 +61,11 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-4 mb-4 md:mb-0">
             <FaXTwitter className="text-xl sm:text-2xl bg-white p-2 h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
             <FaLinkedinIn className="text-xl sm:text-2xl bg-white p-2 h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
-            <FaInstagram className="text-xl sm:text-2xl bg-white p-2 h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
+            <Link href="https://www.instagram.com/swap.nil5191/?hl=en">
+              {" "}
+              <FaInstagram className="text-xl sm:text-2xl bg-white p-2 h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
+            </Link>
+
             <FaYoutube className="text-xl sm:text-2xl bg-white p-2 h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
           </div>
           <p className="text-center text-sm sm:text-lg">
@@ -66,7 +77,7 @@ const Footer = () => {
           href="https://api.whatsapp.com/send?phone=9022513064&text="
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-3 right-3 w-14 h-14 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-500 hover:bg-green-600 animate-bounce"
+          className="fixed bottom-3 right-3 w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-500 hover:bg-green-600 animate-bounce"
         >
           <BsWhatsapp className=" text-3xl font-bold" />
         </a>
