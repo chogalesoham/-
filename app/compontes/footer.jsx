@@ -39,7 +39,7 @@ const Footer = () => {
 
           <ul className="py-4 flex items-start justify-start gap-2 sm:gap-4 text-start flex-col">
             <li className=" text-white font-semibold flex items-center gap-2">
-              <GrLocation /> Mumbai Maharashtra
+              <GrLocation /> Dhamni (Gokulnagri ) Maharashtra
             </li>
             <li className=" text-white font-semibold flex items-center gap-2">
               <HiOutlineMailOpen /> swapnilchogale@gmail.com
